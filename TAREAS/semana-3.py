@@ -9,7 +9,6 @@ def ejercicio_1_1():
 
     protocolo = "HTTPS"   # cambie este valor para probar
 
-    # TODO: complete el codigo aqui
 
     protocolo = "HTTP"
 
@@ -46,7 +45,6 @@ def ejercicio_1_2():
 
     uso_cpu = 85   # porcentaje, entre 0 y 100
 
-    # TODO: complete el codigo aqui
 
     print(f"Uso de CPU: {uso_cpu}%")
 
@@ -78,7 +76,6 @@ def ejercicio_1_3():
 
     puerto = 8080   # cambie este valor para probar
 
-    # TODO: complete el codigo aqui
 
     puerto = 22
     if puerto >= 0 and puerto <= 1023:
@@ -115,7 +112,6 @@ def ejercicio_1_4():
     hora_actual = 10
     cuenta_bloqueada = False
 
-    # TODO: complete el codigo aqui
 
     rol = "admin"
     hora_actual = 10
@@ -154,7 +150,7 @@ def ejercicio_1_5():
 
     primer_octeto = 192   # cambie este valor para probar
 
-    # TODO: complete el codigo aqui
+
 
     primer_octeto = 192
 
@@ -211,6 +207,6 @@ def main():
     print("\n" + "=" * 60)
     print("FIN PRACTICA 1 - Continuar con: practica_02_bucles_for.py")
     print("=" * 60)
-    
+
 if __name__ == "__main__":
     main()
