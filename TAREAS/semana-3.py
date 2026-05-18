@@ -211,5 +211,6 @@ def main():
     print("\n" + "=" * 60)
     print("FIN PRACTICA 1 - Continuar con: practica_02_bucles_for.py")
     print("=" * 60)
+    
 if __name__ == "__main__":
     main()
