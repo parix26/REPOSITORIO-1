@@ -55,6 +55,8 @@ def ejercicio_1_1():
     # El protocolo SMTP es DESCONOCIDO
 
 
+
+
 def ejercicio_1_2():
     """Categorizar uso de CPU."""
     # DESCRIPCION:
