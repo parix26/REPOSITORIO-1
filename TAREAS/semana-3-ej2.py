@@ -16,12 +16,16 @@
 #  BLOQUE A - BUCLE FOR BASICO
 # =============================================================================
 
+
 def ejercicio_2_1():
     """Listar IPs de la subred 192.168.1.0/29 (8 direcciones)."""
     # PISTA: bucle for con range, f-string para construir cada IP.
     print("\n--- Ejercicio 2.1: IPs de una subred ---")
 
     # TODO: complete el codigo aqui
+
+    for r in range(0,8):
+        print(f"192.168.1.{r}")
 
     # SALIDA ESPERADA:
     # 192.168.1.0
@@ -46,8 +50,10 @@ def ejercicio_2_2():
         "Access Point Ubiquiti",
         "Servidor Dell PowerEdge",
     ]
-
     # TODO: complete el codigo aqui
+
+    for dis in dispositivos:
+        print(f"-{dis}")
 
     # SALIDA ESPERADA:
     #   - Router Cisco 2901
@@ -66,6 +72,15 @@ def ejercicio_2_3():
                "activo", "activo", "inactivo", "activo", "activo"]
 
     # TODO: complete el codigo aqui
+    contadoract=0
+    contadorin=0
+
+    for i in estados:
+        if i == "inactivo":
+            contadorin+=1
+        else:
+            contadoract+=1
+    print("Dispositivos activos ", contadoract, "\nDispositivos inactivos ", contadorin, "\nTotal ",contadoract+contadorin)
 
     # SALIDA ESPERADA:
     # Dispositivos activos:   7
@@ -80,6 +95,9 @@ def ejercicio_2_4():
     hosts = ["servidor-web", "servidor-bd", "servidor-mail", "servidor-dns"]
 
     # TODO: complete el codigo aqui
+
+    for pre, h in enumerate(hosts, start=1):
+        print(f"Host {pre}: {h}")
 
     # SALIDA ESPERADA:
     # Host 1: servidor-web
