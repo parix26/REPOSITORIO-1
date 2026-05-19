@@ -118,6 +118,9 @@ def ejercicio_2_5():
 
     # TODO: complete el codigo aqui
 
+    for ip, name in zip(ips, nombres):
+        print(f" {ip}   {name}")
+
     # SALIDA ESPERADA:
     # IP            Hostname
     # ------------------------------
@@ -142,6 +145,13 @@ def ejercicio_3_1_break():
 
     # TODO: complete el codigo aqui
 
+    for port, estado in zip(puertos, estado_puertos):
+        if estado != "cerrado":
+            print(f"PUERTO {port}:   {estado}")
+        else:
+            print("Primer puerto cerrado encontrado: ", port)
+            break
+
     # SALIDA ESPERADA:
     # Puerto 21: abierto
     # Puerto 22: abierto
@@ -161,6 +171,8 @@ def ejercicio_3_2_continue():
     ips_blacklist = ["200.0.0.1", "45.33.32.156"]
 
     # TODO: complete el codigo aqui
+
+
 
     # SALIDA ESPERADA:
     # Procesando: 10.0.0.5
